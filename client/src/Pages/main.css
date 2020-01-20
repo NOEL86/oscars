@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+#main {
+  font-family: cursive;
+  padding: 0;
+  margin: 0;
+  background-image: url("/chrisRock88th.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
