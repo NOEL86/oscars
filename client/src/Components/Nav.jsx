@@ -8,16 +8,9 @@ class Nav extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidMount() {
-    // $(function() {
-    //   $(".navigation__icon").click(function() {
-    //     $(".navigation").toggleClass("navigation-open");
-    //   });
-    // });
-  }
+  componentDidMount() {}
 
   handleClick = () => {
-    console.log("click registered");
     const icon = document.querySelector(".navigation");
     icon.classList.toggle("navigation-open");
   };
@@ -25,16 +18,16 @@ class Nav extends Component {
   render() {
     return (
       <div className="header">
-        <nav className="navigation">
+        <nav className="navigation" onClick={this.handleClick}>
           <section className="logo">
-            <section className="navigation-icon" onClick={this.handleClick}>
+            <section className="navigation-icon">
               <span className="topbar"></span>
               <span className="middlebar"></span>
               <span className="bottombar"></span>
             </section>
             <ul className="navigation-ul">
               <li>
-                <a href="">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="/news">News</a>

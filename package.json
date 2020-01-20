@@ -13,8 +13,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "nodemon": "^1.19.2",
-    "concurrently": "^4.1.2"
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.4"
   },
   "author": "",
   "license": "ISC",
