@@ -1,15 +1,16 @@
 .header {
-  width: 100vw;
+  width: 30vw;
   height: 100vh;
   background-size: cover;
   position: relative;
+  font-family: cursive;
 }
 
 .navigation {
   width: 100px;
   height: 100%;
   display: block;
-  padding-right: 40px;
+  padding-right: 25px;
   position: absolute;
   top: 0;
   left: 0;

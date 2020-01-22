@@ -1,0 +1,12 @@
+#navTwo {
+  background-color: white;
+  box-shadow: 2px 3px 6px rgb(43, 14, 70);
+}
+
+#navTwo a {
+  color: black;
+}
+
+#navTwo a:hover {
+  color: rgb(233, 210, 138);
+}

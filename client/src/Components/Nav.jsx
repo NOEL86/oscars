@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./nav.css";
 class Nav extends Component {
   constructor(props) {
@@ -27,28 +28,36 @@ class Nav extends Component {
             </section>
             <ul className="navigation-ul">
               <li>
-                <a href="/">Home</a>
+                <Link to="/" id="a">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="/news">News</a>
+                <Link id="a" to="/news">
+                  News
+                </Link>
               </li>
               <li>
-                <a href="">Vote</a>
+                <Link to="#" id="a">
+                  Vote
+                </Link>
               </li>
               <li>
-                <a href="">About</a>
+                <Link to="#" id="a">
+                  About
+                </Link>
               </li>
             </ul>
             <section className="navigation-social">
               <ul className="navigation-social-ul">
                 <li>
-                  <a className="social-icon" href=""></a>
+                  <a className="social-icon" href="#"></a>
                 </li>
                 <li>
-                  <a className="social-icon" href=""></a>
+                  <a className="social-icon" href="#"></a>
                 </li>
                 <li>
-                  <a className="social-icon" href=""></a>
+                  <a className="social-icon" href="#"></a>
                 </li>
               </ul>
             </section>

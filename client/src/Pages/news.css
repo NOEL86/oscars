@@ -1,3 +1,5 @@
 #news {
   background-image: none;
+  background-color: rgb(70, 67, 86);
+  min-height: 100vh;
 }
