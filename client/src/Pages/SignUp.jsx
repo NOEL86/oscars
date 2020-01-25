@@ -23,7 +23,7 @@ class SignUp extends Component {
       .then(userData => {
         console.log("signUp", userData);
         alert("Success");
-        window.location.href = "/checkIn";
+        window.location.href = "/";
       })
       .catch(error => {
         this.setState({ error });

@@ -8,9 +8,9 @@ let app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// const routes = require("./routes");
+const routes = require("./routes");
 // const agreement = require("./agreement");
-// app.use(routes);
+app.use(routes);
 
 if (process.env.NODE_ENV === "production") {
   console.log("I made to prod!!");

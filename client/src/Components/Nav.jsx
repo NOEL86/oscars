@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
 import "./nav.css";
 class Nav extends Component {
   constructor(props) {
@@ -33,17 +34,17 @@ class Nav extends Component {
                 </Link>
               </li>
               <li>
-                <Link id="a" to="/news">
+                <Link to="/news" id="a">
                   News
                 </Link>
               </li>
               <li>
-                <Link to="#" id="a">
+                <Link to="/vote" id="a">
                   Vote
                 </Link>
               </li>
               <li>
-                <Link to="#" id="a">
+                <Link to="/about" id="a">
                   About
                 </Link>
               </li>

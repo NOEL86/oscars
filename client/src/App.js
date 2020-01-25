@@ -5,6 +5,7 @@ import Main from "./Pages/Main";
 import News from "./Pages/News";
 import About from "./Pages/About";
 import Login from "./Pages/Login";
+import Vote from "./Pages/Vote";
 import SignUp from "./Pages/SignUp";
 // import "./App.css";
 
@@ -18,8 +19,8 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/news" component={News} />
-            <Route exact path="/About" component={About} />
-            {/* <Route exact path="/assembly" component={Assembly} /> */}
+            <Route exact path="/vote" component={Vote} />
+            <Route exact path="/about" component={About} />
           </Switch>
         </div>
       </HashRouter>

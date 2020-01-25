@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import M from "materialize-css";
+// import options from "materialize-css";
 import "./navTwo.css";
 class NavTwo extends Component {
   constructor(props) {
@@ -9,7 +11,9 @@ class NavTwo extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    M.AutoInit();
+  }
 
   handleClick = () => {
     const icon = document.querySelector(".navigation");
@@ -20,9 +24,16 @@ class NavTwo extends Component {
     return (
       <div>
         <nav id="navTwo">
+          <a
+            href="#"
+            data-target="mobile-demo"
+            className="sidenav-trigger show-on-med-and-down"
+          >
+            <i className="material-icons">menu</i>
+          </a>
           <div className="nav-wrapper">
             <a href="#" className="brand-logo">
-              Oscars
+              <img id="logo" src="../oscar.png" alt="logo" />
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
@@ -32,10 +43,10 @@ class NavTwo extends Component {
                 <Link to="/news">News</Link>
               </li>
               <li>
-                <Link to="#">Vote</Link>
+                <Link to="/vote">Vote</Link>
               </li>
               <li>
-                <Link to="#">About</Link>
+                <Link to="/about">About</Link>
               </li>
             </ul>
           </div>
