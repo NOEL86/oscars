@@ -29,30 +29,11 @@ router.get("/all", function(req, res) {
     let results = [];
     let id = 0;
 
-    $('<article class= "article-tile"> </article> ').each(function(i, element) {
-      // let url = $(element)
-      //   .children()
-      //   .last("href");
+    let article = $('<article class= "article-tile"> </article> ');
+    // console.log(article);
+    let title = article.find("h3").text();
+    console.log(title);
 
-      // let img = $(element)
-      //   .children()
-      //   .last("<p></p>");
-      var title = $(element)
-        .children()
-        .find("p");
-
-      console.log("==================");
-
-      // console.log(element);
-      results = {
-        // img: img,
-        // url: url
-        title: title
-      };
-      console.log(results);
-      // res.send(results);
-      // database.ref().push(results);
-    });
     console.log("==================");
     // console.log(response);
     // res.send(response);
