@@ -42,8 +42,8 @@ class News extends Component {
       <div id="news">
         <NavTwo />
         <div className="row">
-          <div className="col s12 m4 l4">
-            <h3 onClick={this.scrapeArticles}>Oscar Buzz</h3>
+          <div className="col s12 m4 l4" onClick={this.scrapeArticles}>
+            <h3>Oscar Buzz</h3>
             <div className="articles">
               {/* {this.state.articles} */}
               {this.state.articles.map((article, i) => (
