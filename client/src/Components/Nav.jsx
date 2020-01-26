@@ -28,11 +28,11 @@ class Nav extends Component {
               <span className="bottombar"></span>
             </section>
             <ul className="navigation-ul">
-              <li>
+              {/* <li>
                 <Link to="/" id="a">
                   Home
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/news" id="a">
                   News

@@ -1,0 +1,19 @@
+#formCard {
+  min-height: min-content;
+  padding: 5%;
+  box-shadow: 3px 0px 4px grey;
+  border-radius: 10%;
+}
+
+#heading {
+  margin-left: 15%;
+  font-family: cursive;
+}
+
+#btn {
+  background-color: rgb(70, 67, 86);
+}
+
+#alignRight {
+  margin-left: 35%;
+}

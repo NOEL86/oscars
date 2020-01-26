@@ -1,8 +1,23 @@
 import React, { Component } from "react";
 import NavTwo from "../Components/NavTwo";
+import "./vote.css";
 
 class Vote extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      first_name: "",
+      last_name: "",
+      selected: false
+    };
+
+    this.voteSubmit = this.voteSubmit.bind(this);
+  }
+
+  voteSubmit = e => {
+    e.preventDefault();
+    console.log("submit button clicked");
+  };
 
   componentDidMount() {
     {
@@ -84,41 +99,212 @@ class Vote extends Component {
       <div id="vote">
         <NavTwo />
 
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <h1>Your Votes</h1>
-            </div>
-          </div>
-
-          <div className="row">
-            <form className="col s12">
+        <div className="row">
+          <div className="col s2 m3" />
+          <div className="col s8 m8">
+            <form onSubmit={this.voteSubmit} className="col s12">
               <div className="row">
-                <div className="input-field col s6">
-                  <input id="first_name" type="text" class="validate" />
+                <h1 id="heading">Your Votes</h1>
+              </div>
+              <div className="row">
+                <div className="input-field col s4">
+                  <input id="first_name" type="text" className="validate" />
                   <label htmlFor="first_name">First Name</label>
                 </div>
-                <div className="input-field col s6">
-                  <input id="last_name" type="text" class="validate" />
+                <div className="input-field col s4">
+                  <input id="last_name" type="text" className="validate" />
                   <label htmlFor="last_name">Last Name</label>
                 </div>
               </div>
-              <div class="input-field col s12">
-                <h3>
-                  <strong>Question 1</strong>
-                </h3>
-                <h4>You describe yourself as adventurous.</h4>
+              <div className="input-field col s12">
+                <h5>
+                  <strong>Best Picture</strong>
+                </h5>
+
                 <div className="row">
-                  <div className="col s12">
+                  <div className="col s4">
                     <select>
                       <option value="">Options</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
+                      <option value="1">The Irishman</option>
+                      <option value="2">Jojo Rabbit</option>
+                      <option value="3">Little Women</option>
+                      <option value="4">1917</option>
+                      <option value="5">Ford v Ferrari</option>
+                      <option value="6"></option>
                     </select>
-                    <label>Materialize Select</label>
                   </div>
                 </div>
+              </div>
+
+              <div className="input-field col s12">
+                <h5>
+                  <strong>Best Actor</strong>
+                </h5>
+
+                <div className="row">
+                  <div className="col s4">
+                    <select>
+                      <option value="">Options</option>
+                      <option value="1">The Irishman</option>
+                      <option value="2">Jojo Rabbit</option>
+                      <option value="3">Little Women</option>
+                      <option value="4">1917</option>
+                      <option value="5">Ford v Ferrari</option>
+                      <option value="6"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div className="input-field col s12">
+                <h5>
+                  <strong>Best Actress</strong>
+                </h5>
+
+                <div className="row">
+                  <div className="col s4">
+                    <select>
+                      <option value="">Options</option>
+                      <option value="1">The Irishman</option>
+                      <option value="2">Jojo Rabbit</option>
+                      <option value="3">Little Women</option>
+                      <option value="4">1917</option>
+                      <option value="5">Ford v Ferrari</option>
+                      <option value="6"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div className="input-field col s12">
+                <h5>
+                  <strong>Best Supporting Actor</strong>
+                </h5>
+
+                <div className="row">
+                  <div className="col s4">
+                    <select>
+                      <option value="">Options</option>
+                      <option value="1">The Irishman</option>
+                      <option value="2">Jojo Rabbit</option>
+                      <option value="3">Little Women</option>
+                      <option value="4">1917</option>
+                      <option value="5">Ford v Ferrari</option>
+                      <option value="6"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div className="input-field col s12">
+                <h5>
+                  <strong>Best Supporting Actress</strong>
+                </h5>
+
+                <div className="row">
+                  <div className="col s4">
+                    <select>
+                      <option value="">Options</option>
+                      <option value="1">The Irishman</option>
+                      <option value="2">Jojo Rabbit</option>
+                      <option value="3">Little Women</option>
+                      <option value="4">1917</option>
+                      <option value="5">Ford v Ferrari</option>
+                      <option value="6"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div className="input-field col s12">
+                <h5>
+                  <strong>Cinematographer</strong>
+                </h5>
+
+                <div className="row">
+                  <div className="col s4">
+                    <select>
+                      <option value="">Options</option>
+                      <option value="1">The Irishman</option>
+                      <option value="2">Jojo Rabbit</option>
+                      <option value="3">Little Women</option>
+                      <option value="4">1917</option>
+                      <option value="5">Ford v Ferrari</option>
+                      <option value="6"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div className="input-field col s12">
+                <h5>
+                  <strong>Best Director</strong>
+                </h5>
+
+                <div className="row">
+                  <div className="col s4">
+                    <select>
+                      <option value="">Options</option>
+                      <option value="1">The Irishman</option>
+                      <option value="2">Jojo Rabbit</option>
+                      <option value="3">Little Women</option>
+                      <option value="4">1917</option>
+                      <option value="5">Ford v Ferrari</option>
+                      <option value="6"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div className="input-field col s12">
+                <h5>
+                  <strong>Best Short Film</strong>
+                </h5>
+
+                <div className="row">
+                  <div className="col s4">
+                    <select>
+                      <option value="">Options</option>
+                      <option value="1">The Irishman</option>
+                      <option value="2">Jojo Rabbit</option>
+                      <option value="3">Little Women</option>
+                      <option value="4">1917</option>
+                      <option value="5">Ford v Ferrari</option>
+                      <option value="6"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div className="input-field col s12">
+                <h5>
+                  <strong>Best Song</strong>
+                </h5>
+
+                <div className="row">
+                  <div className="col s4">
+                    <select>
+                      <option value="">Options</option>
+                      <option value="1">The Irishman</option>
+                      <option value="2">Jojo Rabbit</option>
+                      <option value="3">Little Women</option>
+                      <option value="4">1917</option>
+                      <option value="5">Ford v Ferrari</option>
+                      <option value="6"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div id="alignRight" className="card-action">
+                <button
+                  id="btn"
+                  className="btn waves-effect"
+                  type="submit"
+                  onSubmit={this.voteSubmit}
+                  name="action"
+                >
+                  Submit
+                </button>
               </div>
             </form>
           </div>

@@ -19,7 +19,14 @@ firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
 router.get("/all", function(req, res) {
-  console.log("hit get all articles route");
+  // console.log("hit get all articles route");
+
+  console.log(
+    "\n******************************************\n" +
+      "Grabbing every article headline, image, and link\n" +
+      "from The Oscars website:" +
+      "\n******************************************\n"
+  );
   request("https://oscar.go.com/news", function(err, response, html) {
     if (err) {
       console.log(err);
@@ -27,15 +34,32 @@ router.get("/all", function(req, res) {
 
     let $ = cheerio.load(html);
     let results = [];
-    let id = 0;
+    // console.log($("article.article-tile"));
+    $("article.article-tile").each(function(i, element) {
+      let img = $(element)
+        .children()
+        .attr("src");
 
-    let article = $('<article class= "article-tile"> </article> ');
-    // console.log(article);
-    let title = article.find("h3").text();
-    console.log(title);
+      let url = $(element)
+        .children()
+        .attr("href");
+
+      let title = $(element)
+        .children()
+        .find("div.at-inner.header.h3");
+
+      console.log("==================");
+      console.log(img);
+
+      results.push({
+        img: img,
+        url: url,
+        title: title
+      });
+    });
 
     console.log("==================");
-    // console.log(response);
+    console.log(results);
     // res.send(response);
   });
 });
