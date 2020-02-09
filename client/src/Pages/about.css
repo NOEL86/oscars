@@ -1,0 +1,22 @@
+#about {
+  background-color: rgb(133, 125, 145);
+  min-height: 100vh;
+}
+
+#headshot {
+  width: 200px;
+  background-color: black;
+  border-radius: 25px;
+}
+
+#aboutCard {
+  background-color: white;
+  margin-top: 25%;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+#paragraph {
+  max-width: 50%;
+  margin-left: 25%;
+}

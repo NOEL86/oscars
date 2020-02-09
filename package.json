@@ -28,6 +28,8 @@
     "firebase": "^7.7.0",
     "materialize-css": "^1.0.0",
     "path": "^0.12.7",
+    "puppeteer": "^2.1.1",
+    "react-google-button": "^0.7.0",
     "request": "^2.88.0"
   }
 }

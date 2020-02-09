@@ -1,4 +1,4 @@
-import firebase from "firebase/app";
+import firebase from "firebase";
 import "firebase/auth";
 import "firebase/analytics";
 
@@ -14,9 +14,9 @@ var firebaseConfig = {
   measurementId: "G-9JP6LL5F7H"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+let fire = firebase.initializeApp(firebaseConfig);
+// firebase.analytics();
 
 export const provider = new firebase.auth.GoogleAuthProvider();
 export const auth = firebase.auth();
-export default firebase;
+export default fire;

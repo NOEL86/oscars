@@ -29,10 +29,15 @@ class Nav extends Component {
             </section>
             <ul className="navigation-ul">
               {/* <li>
-                <Link to="/" id="a">
-                  Home
+                <Link to="/signup" id="a">
+                  Sign Up
                 </Link>
               </li> */}
+              <li>
+                <Link to="/login" id="a">
+                  Login
+                </Link>
+              </li>
               <li>
                 <Link to="/news" id="a">
                   News

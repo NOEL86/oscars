@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import firebase, { auth, provider } from "../firebase.js";
 import M from "materialize-css";
 // import options from "materialize-css";
 import "./navTwo.css";
@@ -9,6 +10,7 @@ class NavTwo extends Component {
     this.state = {};
 
     this.handleClick = this.handleClick.bind(this);
+    this.logout = this.logout.bind(this);
   }
 
   componentDidMount() {
@@ -18,6 +20,21 @@ class NavTwo extends Component {
   handleClick = () => {
     const icon = document.querySelector(".navigation");
     icon.classList.toggle("navigation-open");
+  };
+
+  logout = e => {
+    firebase
+      .auth()
+      .signOut()
+      .then(
+        function() {
+          console.log("Signed Out");
+          window.location.href = "/login#/login";
+        },
+        function(error) {
+          console.error("Sign Out Error", error);
+        }
+      );
   };
 
   render() {
@@ -37,7 +54,9 @@ class NavTwo extends Component {
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="#" onClick={this.logout}>
+                  Log Out
+                </Link>
               </li>
               <li>
                 <Link to="/news">News</Link>

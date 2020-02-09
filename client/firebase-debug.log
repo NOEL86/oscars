@@ -1,0 +1,28 @@
+[debug] [2020-02-06T20:55:57.225Z] ----------------------------------------------------------------------
+[debug] [2020-02-06T20:55:57.228Z] Command:       /usr/local/bin/node /Users/ashleyjimenez/developer/sandbox/oscars/client/node_modules/.bin/firebase deploy
+[debug] [2020-02-06T20:55:57.228Z] CLI Version:   7.12.1
+[debug] [2020-02-06T20:55:57.228Z] Platform:      darwin
+[debug] [2020-02-06T20:55:57.228Z] Node Version:  v10.16.0
+[debug] [2020-02-06T20:55:57.229Z] Time:          Thu Feb 06 2020 13:55:57 GMT-0700 (Mountain Standard Time)
+[debug] [2020-02-06T20:55:57.230Z] ----------------------------------------------------------------------
+[debug] [2020-02-06T20:55:57.230Z] 
+[debug] [2020-02-06T20:55:57.240Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-06T20:55:57.240Z] > authorizing via signed-in user
+[debug] [2020-02-06T20:55:57.240Z] [iam] checking project oscars-4eadc for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2020-02-06T20:55:57.242Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/oscars-4eadc:testIamPermissions  
+
+[debug] [2020-02-06T20:55:57.515Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-06T20:55:57.517Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/oscars-4eadc  
+ 
+[debug] [2020-02-06T20:55:57.751Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'oscars-4eadc'...
+[info] 
+[info] i  deploying database
+[debug] [2020-02-06T20:55:57.968Z] TypeError: rulesConfig.forEach is not a function
+    at module.exports (/Users/ashleyjimenez/developer/sandbox/oscars/client/node_modules/firebase-tools/lib/deploy/database/prepare.js:20:17)
+    at _chain (/Users/ashleyjimenez/developer/sandbox/oscars/client/node_modules/firebase-tools/lib/deploy/index.js:22:40)
+    at /Users/ashleyjimenez/developer/sandbox/oscars/client/node_modules/firebase-tools/lib/deploy/index.js:63:16
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.

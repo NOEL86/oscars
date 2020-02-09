@@ -7,6 +7,7 @@ import About from "./Pages/About";
 import Login from "./Pages/Login";
 import Vote from "./Pages/Vote";
 import SignUp from "./Pages/SignUp";
+
 // import "./App.css";
 
 class App extends Component {
