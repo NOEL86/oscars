@@ -53,11 +53,7 @@ class NavTwo extends Component {
               <img id="logo" src="../oscar.png" alt="logo" />
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li>
-                <Link to="#" onClick={this.logout}>
-                  Log Out
-                </Link>
-              </li>
+             
               <li>
                 <Link to="/news">News</Link>
               </li>
@@ -66,6 +62,11 @@ class NavTwo extends Component {
               </li>
               <li>
                 <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="#" onClick={this.logout}>
+                  Log Out
+                </Link>
               </li>
             </ul>
           </div>
