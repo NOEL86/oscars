@@ -47,7 +47,7 @@ class Login extends Component {
         <div className="row">
           <div className="col s4" />
           <form className="col s8">
-            <h5>Welcome Back!</h5>
+            <h5>Welcome Back! Login Here.</h5>
 
             <div className="row">
               <div className="input-field col s12 m4">

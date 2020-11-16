@@ -39,7 +39,7 @@ class SignUp extends Component {
         <div className="row">
           <div className="col s4" />
           <form className="col s8">
-            <h5>New Here? Sign Up</h5>
+            <h5>New Here? Sign Up!</h5>
             <div className="row">
               <div className="input-field col s12 m4">
                 <label htmlFor="exampleInputEmail1">Email address</label>
