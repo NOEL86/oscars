@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavTwo from "../Components/NavTwo";
-import firebase, { auth, provider } from "../firebase";
+import { auth} from "../firebase";
 import "./login.css";
 class SignUp extends Component {
   constructor(props) {

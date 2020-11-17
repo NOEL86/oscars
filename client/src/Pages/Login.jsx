@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavTwo from "../Components/NavTwo";
-import firebase, { auth, provider } from "../firebase.js";
-import GoogleButton from "react-google-button";
+import { auth } from "../firebase.js";
+// import GoogleButton from "react-google-button";
 import { Link } from "react-router-dom";
 import "./login.css";
 class Login extends Component {

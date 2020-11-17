@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NavTwo from "../Components/NavTwo";
 import "./vote.css";
 import fire from "../firebase";
-import firebase, { auth } from "../firebase.js";
+import { auth } from "../firebase.js";
 
 class Vote extends Component {
   constructor(props) {
