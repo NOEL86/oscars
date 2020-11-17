@@ -36,7 +36,7 @@ class NavAbout extends Component {
             <i className="material-icons">menu</i>
           </a>
           <div className="nav-wrapper">
-            <a href="#" className="brand-logo">
+            <a href="/" className="brand-logo">
               <img id="logo" src="../oscar.png" alt="logo" />
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">

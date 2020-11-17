@@ -49,7 +49,7 @@ class NavTwo extends Component {
             <i className="material-icons">menu</i>
           </a>
           <div className="nav-wrapper">
-            <a href="#" className="brand-logo">
+            <a href="/" className="brand-logo">
               <img id="logo" src="../oscar.png" alt="logo" />
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
@@ -64,7 +64,7 @@ class NavTwo extends Component {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="#" onClick={this.logout}>
+                <Link to="/" onClick={this.logout}>
                   Log Out
                 </Link>
               </li>
