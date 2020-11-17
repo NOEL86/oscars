@@ -99,7 +99,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .navigation .navigation-ul a:hover {

@@ -10,6 +10,7 @@
     "firebase": "^7.8.0",
     "firebase-tools": "^7.12.1",
     "hash-router": "^0.4.0",
+    "http-proxy-middleware": "^1.0.6",
     "materialize-css": "^1.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
