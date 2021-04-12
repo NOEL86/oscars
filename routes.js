@@ -23,11 +23,15 @@ router.get("/all", function(req, res) {
       
       () => {
         let data = [];
-        const list = document.querySelectorAll('.at-inner');
+        const list = document.querySelectorAll('.AnchorLink.tile.tile--blogNews.tile--hero-inactive.tile--blogNews.tile--landscape');
         for (const a of list) {
           data.push({
-            'title': a.querySelector('.ng-binding.ng-scope').innerText.trim().replace(/ (\r\n|\n|\r) /gm, " "),
-            'link': a.querySelector('a').href
+            
+            'date': a.querySelector('.fitt-tracker > div[class="tile--blogNews__content"] > div[class="tile--blogNews__content-date"]').innerText,
+            'title': a.querySelector('.fitt-tracker > div[class="tile--blogNews__content"] > div[class="tile--blogNews__content-title"]').innerText,
+            // 'link': a.querySelector('a').href
+            'link': a.href,
+            "by" : a.querySelector('.fitt-tracker > div[class="tile--blogNews__content"] > div[class="tile--blogNews__content-author"]').innerText,
           })
           
         }
@@ -42,6 +46,6 @@ router.get("/all", function(req, res) {
     await browser.close();
   }
   
-  scraperData("https://oscar.go.com/");
+  scraperData("https://abc.com/shows/oscars/news/");
 })
 module.exports = router;

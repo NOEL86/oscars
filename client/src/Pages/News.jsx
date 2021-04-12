@@ -13,6 +13,8 @@ class News extends Component {
       articles : [],
       headline: '',
       articleUrl: '',
+      date: '',
+      by: '',
       info: false,
       loaded: false
    
@@ -100,6 +102,8 @@ class News extends Component {
                         key={article.id}
                         headline={article.title}
                         articleUrl={article.link}
+                        date={article.date}
+                        by={article.by}
                       />
                     );
                   })}
@@ -126,6 +130,7 @@ class News extends Component {
                         key={article.id}
                         headline={article.title}
                         articleUrl={article.link}
+                        by={article.by}
                       />
                     );
                   })}
