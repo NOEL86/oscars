@@ -96,14 +96,15 @@ class News extends Component {
               <div className="row">
                 <div className="col s12">
                   {this.state.articles.map(article => {
+                    console.log(article);
                     return (
                       <ArticleCard
                         id={article.id}
                         key={article.id}
-                        headline={article.title}
+                        articleDate={article.date}
                         articleUrl={article.link}
-                        date={article.date}
                         by={article.by}
+                        headline={article.title}
                       />
                     );
                   })}
@@ -128,6 +129,7 @@ class News extends Component {
                       <ArticleCard
                         id={article.id}
                         key={article.id}
+                        articleDate={article.date}
                         headline={article.title}
                         articleUrl={article.link}
                         by={article.by}

@@ -29,7 +29,7 @@ router.get("/all", function(req, res) {
             
             'date': a.querySelector('.fitt-tracker > div[class="tile--blogNews__content"] > div[class="tile--blogNews__content-date"]').innerText,
             'title': a.querySelector('.fitt-tracker > div[class="tile--blogNews__content"] > div[class="tile--blogNews__content-title"]').innerText,
-            // 'link': a.querySelector('a').href
+            // 'img': a.querySelector('.Image aspect-ratio--parent_tile--blogNews__image > div[class="Image__Wrapper_aspect-ratio--child"] > picture').src,
             'link': a.href,
             "by" : a.querySelector('.fitt-tracker > div[class="tile--blogNews__content"] > div[class="tile--blogNews__content-author"]').innerText,
           })

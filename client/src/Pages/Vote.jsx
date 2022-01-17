@@ -207,6 +207,7 @@ class Vote extends Component {
 
   componentDidMount() {
     //hit db and get votes by sign in
+    //go get current nominations and map them in the drop downs
   }
 
   render() {
